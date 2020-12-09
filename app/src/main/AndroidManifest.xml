@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.firebaseproject">
-
+    <!-- android:name="android.support.multidex.MultiDexApplication"  me dijeron que lo pusiera dentro de application, no va-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseProject">
-        <activity android:name=".MyFragment"></activity>
+        <activity android:name=".FirebaseActivity" />
+        <activity android:name=".ShoppingList" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

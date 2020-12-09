@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         mViewModel.getRecords().observe(this, obs);
-        Thread worker = new Thread() {
+        /*Thread worker = new Thread() {
             /**
              * If this thread was constructed using a separate
              * <code>Runnable</code> run object, then that
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
              * @see #stop()
              * @see #Thread(ThreadGroup, Runnable, String)
              */
-            @Override
+           /* @Override
             public void run() {
                 super.run();
                 Random r = new Random();
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         };
-        worker.start();
+        worker.start();*/
     }
 
     public class IntegerAdapter extends RecyclerView.Adapter<IntegerAdapter.FavViewHolder> {
